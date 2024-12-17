@@ -16,6 +16,9 @@ export default function MealOverviewScreen({ route, navigation }) {
         title={itemData.item.title}
         complexity={itemData.item.complexity}
         imageUrl={itemData.item.imageUrl}
+        id={itemData.item.id}
+        duration={itemData.item.duration}
+        affordability={itemData.item.affordability}
       />
     );
   }
