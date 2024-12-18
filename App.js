@@ -1,11 +1,16 @@
-import { StyleSheet } from "react-native";
+import { Button, StyleSheet, Text, Pressable } from "react-native";
 
 import CategoriesScreen from "./Screens/CategoriesScreen";
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
 import MealOverviewScreen from "./Screens/MealsOverViewScreen";
 import MealDetailsScreen from "./Screens/MealDetailsScreen";
+
+const Drawer = createDrawerNavigator();
+
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -15,7 +20,7 @@ export default function App() {
         <StatusBar style="light" />
         <Stack.Navigator
           screenOptions={{
-            headerTintColor: "black",
+            headerTintColor: "white",
 
             headerStyle: {
               backgroundColor: "orange",
